@@ -1,9 +1,16 @@
 // API Configuration - Auto-detect environment
 const getAPIBaseURL = () => {
-    // Development: localhost
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+    // Local development
+    if (
+        window.location.hostname === 'localhost' ||
+        window.location.hostname === '127.0.0.1'
+    ) {
         return 'http://localhost:8000';
     }
+
+    // Production / deployed frontend
+    return 'https://ai-hiring-pridiction-backend.onrender.com';
+};
     
     // Production: same domain, use relative path
     // This works with both direct port access and reverse proxy
