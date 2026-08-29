@@ -1,5 +1,6 @@
-// API Configuration - Auto-detect environment
+// API Configuration
 const getAPIBaseURL = () => {
+
     // Local development
     if (
         window.location.hostname === 'localhost' ||
@@ -8,38 +9,17 @@ const getAPIBaseURL = () => {
         return 'http://localhost:8000';
     }
 
-    // Production / deployed frontend
+    // Production - deployed backend on Render
     return 'https://ai-hiring-pridiction-backend.onrender.com';
 };
-    
-    // Production: same domain, use relative path
-    // This works with both direct port access and reverse proxy
-    if (window.location.hostname.includes('.')) {
-        // For production, if backend is on same domain use it directly
-        // Otherwise use the same domain at port 8000
-        const protocol = window.location.protocol;
-        const hostname = window.location.hostname;
-        const port = window.location.port;
-        
-        // If accessed via port 80/443 (standard ports), backend is likely on same domain
-        if (!port || port === '80' || port === '443') {
-            // Assume backend is proxied through same domain
-            return `${protocol}//${hostname}`;
-        }
-        
-        // If custom port, try to access backend on port 8000
-        return `${protocol}//${hostname}:8000`;
-    }
-    
-    // Fallback to current location
-    return window.location.origin;
-};
 
+// API Base URL
 const API_BASE_URL = getAPIBaseURL();
 
-// Debug: Log API URL
+// Debug information
 console.log('API Base URL:', API_BASE_URL);
-console.log('Environment:', window.location.hostname);
+console.log('Frontend Hostname:', window.location.hostname);
+
 
 // Status tracking
 let apiConnected = false;
