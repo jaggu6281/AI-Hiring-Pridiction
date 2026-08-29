@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hiring Prediction System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🎯 AI Hiring Prediction System</h1>
+            <p>Intelligent Candidate Evaluation & Ranking</p>
+        </header>
+
+        <div class="status-bar">
+            <span id="statusIndicator" class="status-dot offline"></span>
+            <span id="statusText">Connecting to API...</span>
+        </div>
+
+        <main class="main-content">
+            <!-- Tabs Navigation -->
+            <nav class="tabs">
+                <button class="tab-btn active" data-tab="predict">Predict Hire</button>
+                <button class="tab-btn" data-tab="job-fit">Job Fit Analysis</button>
+                <button class="tab-btn" data-tab="report">Generate Report</button>
+            </nav>
+
+            <!-- Tab 1: Predict Hire -->
+            <section id="predict" class="tab-content active">
+                <h2>Predict Candidate Outcome</h2>
+                <form id="predictForm" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Candidate Name *</label>
+                            <input type="text" id="name" placeholder="e.g., John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobRole">Job Role Applied For *</label>
+                            <input type="text" id="jobRole" placeholder="e.g., Data Scientist" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="skills">Key Skills (comma-separated) *</label>
+                            <input type="text" id="skills" placeholder="e.g., Python, Machine Learning, SQL" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="experience">Years of Experience *</label>
+                            <input type="number" id="experience" placeholder="e.g., 5" min="0" max="60" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="education">Education Level *</label>
+                            <select id="education" required>
+                                <option value="">Select...</option>
+                                <option value="High School">High School</option>
+                                <option value="Bachelor">Bachelor's Degree</option>
+                                <option value="Master">Master's Degree</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="projects">Projects Count *</label>
+                            <input type="number" id="projects" placeholder="e.g., 5" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="salary">Salary Expectation ($) *</label>
+                            <input type="number" id="salary" placeholder="e.g., 80000" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="aiScore">AI Screening Score (0-100) *</label>
+                            <input type="number" id="aiScore" placeholder="e.g., 75" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="certifications">Certifications (optional)</label>
+                            <input type="text" id="certifications" placeholder="e.g., AWS Certified, Google Cloud Certified">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">🔮 Predict</button>
+                </form>
+                <div id="predictResult" class="result-box hidden"></div>
+            </section>
+
+            <!-- Tab 2: Job Fit Analysis -->
+            <section id="job-fit" class="tab-content">
+                <h2>Job Fit Analysis</h2>
+                <form id="jobFitForm" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobFitName">Candidate Name *</label>
+                            <input type="text" id="jobFitName" placeholder="e.g., John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobFitRole">Job Role Applied For *</label>
+                            <input type="text" id="jobFitRole" placeholder="e.g., Senior Data Scientist" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobFitSkills">Candidate Skills (comma-separated) *</label>
+                            <input type="text" id="jobFitSkills" placeholder="e.g., Python, Deep Learning, SQL" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobFitExperience">Years of Experience *</label>
+                            <input type="number" id="jobFitExperience" placeholder="e.g., 5" min="0" max="60" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobFitEducation">Education Level *</label>
+                            <select id="jobFitEducation" required>
+                                <option value="">Select...</option>
+                                <option value="High School">High School</option>
+                                <option value="Bachelor">Bachelor's Degree</option>
+                                <option value="Master">Master's Degree</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobFitProjects">Projects Count *</label>
+                            <input type="number" id="jobFitProjects" placeholder="e.g., 5" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="jobFitSalary">Salary Expectation ($) *</label>
+                            <input type="number" id="jobFitSalary" placeholder="e.g., 80000" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jobFitAIScore">AI Screening Score (0-100) *</label>
+                            <input type="number" id="jobFitAIScore" placeholder="e.g., 75" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">📊 Analyze Fit</button>
+                </form>
+                <div id="jobFitResult" class="result-box hidden"></div>
+            </section>
+
+            <!-- Tab 3: Generate Report -->
+            <section id="report" class="tab-content">
+                <h2>Generate Candidate Report</h2>
+                <form id="reportForm" class="form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reportName">Candidate Name *</label>
+                            <input type="text" id="reportName" placeholder="e.g., John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reportRole">Job Role Applied For *</label>
+                            <input type="text" id="reportRole" placeholder="e.g., Machine Learning Engineer" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reportSkills">Key Skills (comma-separated) *</label>
+                            <input type="text" id="reportSkills" placeholder="e.g., Python, Machine Learning, SQL" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reportExperience">Years of Experience *</label>
+                            <input type="number" id="reportExperience" placeholder="e.g., 5" min="0" max="60" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reportEducation">Education Level *</label>
+                            <select id="reportEducation" required>
+                                <option value="">Select...</option>
+                                <option value="High School">High School</option>
+                                <option value="Bachelor">Bachelor's Degree</option>
+                                <option value="Master">Master's Degree</option>
+                                <option value="PhD">PhD</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="reportProjects">Projects Count *</label>
+                            <input type="number" id="reportProjects" placeholder="e.g., 5" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reportSalary">Salary Expectation ($) *</label>
+                            <input type="number" id="reportSalary" placeholder="e.g., 80000" min="0" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reportAIScore">AI Screening Score (0-100) *</label>
+                            <input type="number" id="reportAIScore" placeholder="e.g., 75" min="0" max="100" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">📄 Generate Report</button>
+                </form>
+                <div id="reportResult" class="result-box hidden"></div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>API Version: 1.0.0 | Backend: http://localhost:8000</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

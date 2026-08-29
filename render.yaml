@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: ai-hiring-backend
+    env: python
+    plan: standard
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port 8080
+    healthCheckPath: /health
+    healthCheckInterval: 30
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.16
+      - key: PYTHONUNBUFFERED
+        value: true
+      - key: PYTHONDONTWRITEBYTECODE
+        value: true
+      - key: PORT
+        value: 8080
+      - key: ENVIRONMENT
+        value: production
+
+  - type: static_site
+    name: ai-hiring-frontend
+    staticPublishPath: frontend
+    buildCommand: echo "Frontend static files"
+    routes:
+      - path: /
+        destination: /index.html
+    envVars: []
+    autoDeploy: true
+    headers:
+      - path: /**
+        name: X-Frame-Options
+        value: "SAMEORIGIN"
+      - path: /**
+        name: X-Content-Type-Options
+        value: "nosniff"
+      - path: /**
+        name: X-XSS-Protection
+        value: "1; mode=block"

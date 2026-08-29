@@ -1,0 +1,20 @@
+{
+    "target": "Target_Binary",
+    "features": [
+        "Experience (Years)",
+        "Salary Expectation ($)",
+        "Projects Count",
+        "Skill_Count",
+        "Certification_Count",
+        "Project_Experience_Index",
+        "Education",
+        "Job Role"
+    ],
+    "model_type": "XGBoost",
+    "recommendation_thresholds": {
+        "strong_hire": 90,
+        "hire": 75,
+        "review": 50,
+        "reject": 0
+    }
+}

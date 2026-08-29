@@ -1,0 +1,51 @@
+Resume_ID,Name,Skills,Experience (Years),Education,Certifications,Job Role,Salary Expectation ($),Projects Count,Skill_Count,Certification_Count,AI Score (0-100),Hire_Probability,Predicted_Decision,Predicted_Decision_Label,Recommendation,Candidate_Strength_Score,Final_Candidate_Score,Rank
+824,Colleen Bates,"Java, C++, React, SQL",10,PhD,Deep Learning Specialization,Software Engineer,77427,10,4,1,100,99.99716,1,Hire,Strong Hire,100.0,99.99773406982422,1
+403,Carlos Dawson,"Networking, Linux, Ethical Hacking, Cybersecurity",10,B.Tech,Google ML,Cybersecurity Analyst,61659,10,4,1,100,99.99534,1,Hire,Strong Hire,100.0,99.99626922607422,2
+485,Laurie Wilson,"C++, Java, React, SQL",10,MBA,Deep Learning Specialization,Software Engineer,103925,9,4,1,100,99.99659,1,Hire,Strong Hire,97.5,99.49727630615234,3
+841,Gerald Greene,"Cybersecurity, Networking, Linux, Ethical Hacking",10,M.Tech,Deep Learning Specialization,Cybersecurity Analyst,114697,9,4,1,100,99.99381,1,Hire,Strong Hire,97.5,99.49504852294922,4
+251,Timothy Smith,"Python, NLP, TensorFlow, Pytorch",9,B.Tech,AWS Certified,AI Researcher,95912,10,4,1,100,99.996414,1,Hire,Strong Hire,96.5,99.29713134765625,5
+501,Christine Beck,"NLP, TensorFlow, Python, Pytorch",9,PhD,AWS Certified,AI Researcher,112005,10,4,1,100,99.99492,1,Hire,Strong Hire,96.5,99.29593353271484,6
+777,Traci Austin,"Python, SQL, Deep Learning, Machine Learning",10,M.Tech,Deep Learning Specialization,Data Scientist,110158,8,4,1,100,99.9953,1,Hire,Strong Hire,95.0,98.9962387084961,7
+601,John White,"C++, React, SQL, Java",9,B.Tech,Google ML,Software Engineer,76854,9,4,1,100,99.9972,1,Hire,Strong Hire,94.0,98.79776458740234,8
+806,Brian Welch,"TensorFlow, Python, NLP, Pytorch",9,M.Tech,Google ML,AI Researcher,68212,9,4,1,100,99.99657,1,Hire,Strong Hire,94.0,98.79725341796875,9
+753,Melissa Preston,"React, C++, SQL, Java",9,PhD,Deep Learning Specialization,Software Engineer,68203,9,4,1,100,99.99634,1,Hire,Strong Hire,94.0,98.7970703125,10
+551,Rebecca Kirby,"Python, Deep Learning, Machine Learning, SQL",9,B.Tech,Google ML,Data Scientist,64063,9,4,1,100,99.99617,1,Hire,Strong Hire,94.0,98.79694061279297,11
+990,Tracy Jennings,"Networking, Cybersecurity, Ethical Hacking, Linux",9,MBA,AWS Certified,Cybersecurity Analyst,45660,9,4,1,100,99.99568,1,Hire,Strong Hire,94.0,98.79654388427734,12
+921,Jonathan Myers,"Java, SQL, React, C++",9,B.Sc,Google ML,Software Engineer,108502,9,4,1,100,99.99419,1,Hire,Strong Hire,94.0,98.79535369873047,13
+471,Dana Gibson,"Python, TensorFlow, Pytorch, NLP",8,PhD,AWS Certified,AI Researcher,44783,10,4,1,100,99.99604,1,Hire,Strong Hire,93.0,98.59683380126953,14
+999,Danielle Horn,"Linux, Networking, Cybersecurity, Ethical Hacking",8,PhD,AWS Certified,Cybersecurity Analyst,83146,10,4,1,100,99.99572,1,Hire,Strong Hire,93.0,98.59657440185546,15
+634,Patrick Gonzalez,"TensorFlow, Pytorch, Python, NLP",10,B.Tech,AWS Certified,AI Researcher,94952,6,4,1,100,99.99523,1,Hire,Strong Hire,90.0,97.99618530273438,16
+978,Sherry White,"React, C++, SQL, Java",7,M.Tech,Google ML,Software Engineer,67871,10,4,1,100,99.99665,1,Hire,Strong Hire,89.5,97.89732208251954,17
+902,John Wilson,"Pytorch, NLP, Python, TensorFlow",7,M.Tech,AWS Certified,AI Researcher,112353,10,4,1,100,99.99535,1,Hire,Strong Hire,89.5,97.89628448486329,18
+165,Rhonda Green,"Networking, Cybersecurity, Linux, Ethical Hacking",7,M.Tech,Google ML,Cybersecurity Analyst,117704,10,4,1,100,99.99381,1,Hire,Strong Hire,89.5,97.89504852294922,19
+517,Joseph Chapman,"SQL, React, Java, C++",9,MBA,Google ML,Software Engineer,95141,7,4,1,100,99.99702,1,Hire,Strong Hire,89.0,97.79761199951172,20
+218,William Murphy,"TensorFlow, Python, NLP, Pytorch",8,MBA,AWS Certified,AI Researcher,70446,8,4,1,100,99.99677,1,Hire,Strong Hire,88.0,97.59742126464843,21
+395,Donald Morales,"Python, Pytorch, TensorFlow, NLP",8,B.Tech,AWS Certified,AI Researcher,65345,8,4,1,100,99.99616,1,Hire,Strong Hire,88.0,97.59693298339843,22
+201,Ashley Elliott,"Cybersecurity, Ethical Hacking, Linux, Networking",8,MBA,Google ML,Cybersecurity Analyst,102247,8,4,1,100,99.99566,1,Hire,Strong Hire,88.0,97.59652862548828,23
+269,Paul Lozano,"SQL, Machine Learning, Deep Learning, Python",8,M.Tech,Google ML,Data Scientist,109019,8,4,1,100,99.9953,1,Hire,Strong Hire,88.0,97.59623870849609,24
+934,Kristina Evans,"Machine Learning, Deep Learning, Python",10,M.Tech,Google ML,Data Scientist,47998,10,3,1,100,99.99516,1,Hire,Strong Hire,87.5,97.49613189697266,25
+315,Robert Thompson,"Networking, Ethical Hacking, Linux, Cybersecurity",10,M.Tech,Google ML,Cybersecurity Analyst,97006,5,4,1,100,99.99301,1,Hire,Strong Hire,87.5,97.4944076538086,26
+6,Samantha Santos,"Cybersecurity, Networking, Linux, Ethical Hacking",10,B.Tech,Google ML,Cybersecurity Analyst,47957,5,4,1,100,99.992134,1,Hire,Strong Hire,87.5,97.49370574951172,27
+252,Erin Maynard,"Pytorch, NLP, TensorFlow, Python",7,M.Tech,AWS Certified,AI Researcher,51478,9,4,1,100,99.996376,1,Hire,Strong Hire,87.0,97.39710083007813,28
+614,Caroline Ford,"Java, C++, SQL, React",7,B.Sc,Google ML,Software Engineer,115954,9,4,1,100,99.99419,1,Hire,Strong Hire,87.0,97.39535369873047,29
+87,Heather Bauer,"SQL, Deep Learning, Python, Machine Learning",6,M.Tech,Deep Learning Specialization,Data Scientist,72143,10,4,1,100,99.99722,1,Hire,Strong Hire,86.0,97.19777984619141,30
+346,Isabel Williams,"Cybersecurity, Ethical Hacking, Networking, Linux",6,MBA,Google ML,Cybersecurity Analyst,89696,10,4,1,100,99.99653,1,Hire,Strong Hire,86.0,97.19722290039063,31
+457,Paul Wallace,"Cybersecurity, Ethical Hacking, Linux, Networking",6,MBA,Deep Learning Specialization,Cybersecurity Analyst,80085,10,4,1,100,99.99646,1,Hire,Strong Hire,86.0,97.19716949462891,32
+540,Felicia Wright,"TensorFlow, Pytorch, NLP, Python",6,PhD,Google ML,AI Researcher,64338,10,4,1,100,99.996185,1,Hire,Strong Hire,86.0,97.1969482421875,33
+903,Lisa White,"Deep Learning, Machine Learning, SQL, Python",6,PhD,Deep Learning Specialization,Data Scientist,48306,10,4,1,100,99.99596,1,Hire,Strong Hire,86.0,97.19676513671875,34
+761,Reginald Hernandez,"Ethical Hacking, Linux, Cybersecurity, Networking",6,B.Sc,Deep Learning Specialization,Cybersecurity Analyst,85255,10,4,1,100,99.995255,1,Hire,Strong Hire,86.0,97.19620819091797,35
+22,Amber Davis,"Python, TensorFlow, Pytorch, NLP",6,B.Sc,Google ML,AI Researcher,106352,10,4,1,100,99.994156,1,Hire,Strong Hire,86.0,97.19532318115235,36
+618,Heather Brown,"SQL, React, C++, Java",8,M.Tech,Google ML,Software Engineer,102924,7,4,1,100,99.99646,1,Hire,Strong Hire,85.5,97.0971694946289,37
+499,Jill Combs,"Java, React, SQL, C++",8,M.Tech,Google ML,Software Engineer,61601,7,4,1,100,99.996376,1,Hire,Strong Hire,85.5,97.09710083007812,38
+898,Patricia Dunn,"TensorFlow, NLP, Python, Pytorch",8,M.Tech,Google ML,AI Researcher,100399,7,4,1,100,99.99628,1,Hire,Strong Hire,85.5,97.0970245361328,39
+537,Carlos Ochoa,"Java, React, C++, SQL",8,B.Tech,Google ML,Software Engineer,63268,7,4,1,100,99.996056,1,Hire,Strong Hire,85.5,97.09684906005859,40
+829,Stephen Miller,"TensorFlow, NLP, Python",10,M.Tech,Google ML,AI Researcher,65446,9,3,1,100,99.99568,1,Hire,Strong Hire,85.0,96.99654388427734,41
+20,Jennifer Collins,"Machine Learning, SQL, Python",10,B.Tech,Deep Learning Specialization,Data Scientist,53167,9,3,1,100,99.994804,1,Hire,Strong Hire,85.0,96.99584197998047,42
+336,Sergio Scott,"Java, SQL, React, C++",10,B.Sc,Deep Learning Specialization,Software Engineer,69145,4,4,1,100,99.99341,1,Hire,Strong Hire,85.0,96.9947280883789,43
+117,Mr. David Boyle,"Networking, Cybersecurity, Linux, Ethical Hacking",10,B.Tech,,Cybersecurity Analyst,101100,10,4,0,100,99.96677,1,Hire,Strong Hire,85.0,96.9734115600586,44
+976,Erin Wells,"Cybersecurity, Linux, Ethical Hacking, Networking",7,B.Tech,AWS Certified,Cybersecurity Analyst,95709,8,4,1,100,99.99544,1,Hire,Strong Hire,84.50000000000001,96.89635314941407,45
+512,Pamela Foster,"Networking, Ethical Hacking, Cybersecurity, Linux",9,MBA,Deep Learning Specialization,Cybersecurity Analyst,73181,5,4,1,100,99.99551,1,Hire,Strong Hire,84.0,96.79640655517578,46
+441,Zoe King,"Deep Learning, Python, Machine Learning",9,MBA,Google ML,Data Scientist,105724,10,3,1,100,99.99468,1,Hire,Strong Hire,84.0,96.79575042724609,47
+511,Roger Lewis,"Networking, Ethical Hacking, Linux, Cybersecurity",9,B.Tech,Deep Learning Specialization,Cybersecurity Analyst,80779,5,4,1,100,99.99356,1,Hire,Strong Hire,84.0,96.7948501586914,48
+970,Mark Hughes,"Python, Machine Learning, SQL",9,PhD,Google ML,Data Scientist,104274,10,3,1,100,99.99326,1,Hire,Strong Hire,84.0,96.79461364746093,49
+874,Matthew Ward,"Machine Learning, Python, Deep Learning, SQL",9,B.Tech,Google ML,Data Scientist,107697,5,4,1,100,99.992645,1,Hire,Strong Hire,84.0,96.7941177368164,50
